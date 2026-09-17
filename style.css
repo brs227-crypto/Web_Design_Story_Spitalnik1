@@ -69,7 +69,6 @@ margin: auto;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
 }
 
 h1 {
@@ -101,24 +100,24 @@ h1 {
 }
 
 p {
-  font-size: 15px;
-	max-width: 30rem;
+  font-size: 20px;
+  width: 30rem;
   min-width: 20rem;
   font-family: "MedievalSharp";
-	margin-bottom: 1.5rem;
-	margin: auto;
-	margin-bottom: 3rem
+  margin: auto;
+  margin-bottom: 1.5rem;
+
 }
 
 .cried {
   text-align: center;
   margin-top: 10rem;
   margin-bottom: 0rem;
-  font-size: 15px;
+  font-size: 20px;
 
 }
 
-.braid{
+.braid{ /*Adobe Stock*/
   width: 200px;
   height: 550px;
   margin: auto;
@@ -126,6 +125,50 @@ p {
   position: relative;
   text-align: center;
 }
+
+.story-section {
+  position: relative;
+  width: 100%;
+}
+
+.left-image  /*CHAT GPT*/{
+  position: absolute;
+  width: 20vw;
+  left: 0;
+  margin-left: 40px;
+}
+
+.right-image  /*CHAT GPT*/{
+  position: absolute;
+  transform: scaleX(-1);
+  width: 20vw;
+  right: 0;
+  margin-right: 40px;
+}
+
+.left-music{
+  position: absolute;
+  width: 20vw;
+  left: 0;
+  margin-left: 40px;
+
+}
+
+.right-music{
+  position: absolute;
+  width: 20vw;
+  right: 0;
+  margin-right: 40px;
+
+}
+
+.heart{
+  position: absolute;
+  width: 20vw;
+  left: 0;
+  margin-left: 40px;
+}
+
 
 blockquote {
 	font-family: "Libre Caslon Text";
@@ -142,7 +185,7 @@ blockquote {
 }
 
 
-.evil{
+.evil{ 
   width: 200px;
   height: 550px;
   margin: auto;
@@ -150,7 +193,7 @@ blockquote {
   text-align: center;
 }
 
-.evil img{
+.evil img /*ChatGPT*/{
 width: 100%;
 height: 40%;
 object-fit: cover;
@@ -165,22 +208,60 @@ object-fit: cover;
   transform: translateX(-50%);
 }
 
-.eyes img {
+.eyes img  /*ChatGPT*/ {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
+.footer-banner /*ChatGPT*/ {
+  display: block;
+  width: 50vw;       
+  height: auto;       
+  object-fit: cover;  
+  margin: auto;
+}
 
 footer {
   margin: auto;
   text-align: center;
-  background-color: #FFFFFF;
   padding-top: 1rem;
   padding-bottom: 1rem;
-
- 
 }
+
+
+  @media screen and (max-width: 900px) {
+  .left-image{
+    display: none;
+  }
+
+    @media screen and (max-width: 900px) {
+  .right-image{
+    display: none;
+  }
+
+    @media screen and (max-width: 900px) {
+  .left-music{
+    display: none;
+  }
+
+    @media screen and (max-width: 900px) {
+  .right-music{
+    display: none;
+  }
+
+ @media screen and (max-width: 900px) {
+  .heart{
+    display: none;
+  }
+
+@media screen and (max-width: 920px) {
+  p {
+  
+  }
+}
+
+
 
 
 
