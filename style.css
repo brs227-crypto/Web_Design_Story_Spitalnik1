@@ -146,7 +146,7 @@ p {
   margin-right: 40px;
 }
 
-.left-music{
+.left-music /*CHAT GPT*/{
   position: absolute;
   width: 20vw;
   left: 0;
@@ -154,7 +154,7 @@ p {
 
 }
 
-.right-music{
+.right-music /*CHAT GPT*/{
   position: absolute;
   width: 20vw;
   right: 0;
@@ -162,11 +162,18 @@ p {
 
 }
 
-.heart{
+.heart /*CHAT GPT*/{
   position: absolute;
   width: 20vw;
   left: 0;
   margin-left: 40px;
+}
+
+.broken /*CHAT GPT*/{
+   position: absolute;
+  width: 20vw;
+  right: 0;
+  margin-right: 40px;
 }
 
 
@@ -225,6 +232,7 @@ object-fit: cover;
 }
 
 footer {
+  font-size: 18px;
   margin: auto;
   margin-bottom: 5px;
   text-align: center;
@@ -246,7 +254,9 @@ font-size: 15px;
   .right-image,
   .left-music,
   .right-music,
-  .heart {
+  .heart,
+  .broken {
+
   display: none;
   }
 
