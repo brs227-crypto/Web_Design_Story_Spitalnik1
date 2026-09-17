@@ -224,11 +224,19 @@ object-fit: cover;
 
 footer {
   margin: auto;
+  margin-bottom: 5px;
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  line-height: 50px;
 }
 
+a {
+font-family: "MedievalSharp";
+color: black;
+font-size: 15px;
+
+}
 
   @media screen and (max-width: 900px) {
   .left-image{
@@ -255,10 +263,6 @@ footer {
     display: none;
   }
 
-@media screen and (max-width: 920px) {
-  p {
-  
-  }
 }
 
 
