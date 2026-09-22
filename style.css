@@ -104,7 +104,6 @@ p {
   font-family: "MedievalSharp";
   margin: auto;
   margin-bottom: 1.5rem;
-
 }
 
 .cried {
@@ -135,7 +134,9 @@ p {
   width: 20vw;
   left: 0;
   margin-left: 40px;
+  margin-right: 20px;
 }
+
 
 .right-image  /*CHAT GPT*/{
   position: absolute;
@@ -224,6 +225,15 @@ object-fit: cover;
   object-fit: contain;
 }
 
+.narrative {
+  font-family: "MedievalSharp";
+  line-height: 25px;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
 .footer-banner /*ChatGPT*/ {
   display: block;
   width: 50vw;       
@@ -249,7 +259,7 @@ font-size: 15px;
 
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 913px) {
 
   .left-image,
   .right-image,
@@ -262,10 +272,12 @@ font-size: 15px;
   }
 }
 
+
+
+
 @media screen and (max-width: 43rem){
 blockquote {
   width: 100%;
-}
 }
 }
 
