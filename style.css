@@ -228,28 +228,52 @@ object-fit: cover;
 .narrative {
   font-family: "MedievalSharp";
   line-height: 25px;
-  text-align: center;
   font-size: 25px;
+  margin: auto;
   margin-top: 50px;
   margin-bottom: 30px;
+  display: flex;
 }
 
 .footer-banner /*ChatGPT*/ {
   display: block;
-  width: 50vw;       
+  width: 35vw;      
   height: auto;       
   object-fit: cover;  
   margin: auto;
 }
 
+
+
 footer {
-  font-size: 18px;
+  font-size: px;
   margin: auto;
+  margin-top: 5rem;
   margin-bottom: 5px;
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
   line-height: 50px;
+}
+
+.arrow {
+  width: 8vw;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.retold{
+  text-align: center;
+}
+
+.narrative {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;'
+ gap: 10px;
+ width: 75%;
+ margin: 50px auto 100px auto;
 }
 
 a {
