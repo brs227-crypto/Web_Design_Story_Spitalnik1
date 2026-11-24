@@ -1,0 +1,481 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFFBF5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  flex: 1;
+}
+
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 8%;
+  background-color: #FFFBF5;
+  border-bottom: 2px solid #F0687F;
+  gap: 20px;
+}
+
+.logo {
+  font-family: "new-spirit-compressed", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 3em;
+  color: #F36B2B;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  font-family: "bookmania", serif;
+  font-size: 1.1em;
+  color: #8C4C13;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #F0687F;
+}
+
+
+
+
+.header {
+  background-color: #F0687F;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 40px 8%;
+  width: 100%;
+}
+
+.header-text {
+  flex: 1.5;
+  min-width: 0;
+}
+
+h1 {
+  font-family: "bookmania", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: clamp(45px, 6vw, 100px);
+  line-height: 1.05;
+  color: #FFFBF5;
+  margin: 0 0 30px 0;
+}
+
+.header img {
+  width: 35%;
+  max-width: 450px;
+  height: auto;
+  object-fit: contain;
+  margin: 0;
+  padding-bottom: 60px;
+  transform: translateY(60px);
+  filter: drop-shadow(0 15px 12px rgba(0, 0, 0, 0.15));
+}
+
+
+
+
+.description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 650px;
+}
+
+.prep, .cook, .total, .serve {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  gap: 5px;
+  padding: 0 15px;
+}
+
+.prep, .cook, .total {
+  border-right: 1px solid #FFFBF5;
+}
+
+.title {
+  font-family: "futura-pt", sans-serif;
+  font-weight: 600;
+  font-size: clamp(12px, 1.3vw, 20px);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  white-space: nowrap;
+  color: #FFFBF5;
+}
+
+.time {
+  font-family: "bookmania", serif;
+  font-weight: 400;
+  font-size: clamp(18px, 2vw, 32px);
+  color: #FFFBF5;
+}
+
+
+
+
+.recipe {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 40px;
+  margin: 70px 8% 40px 8%;
+}
+
+.ingredients {
+  flex: 1;
+  min-width: 0;
+  background-color: #F4CFD9;
+  border-radius: 26px;
+  padding: 25px 30px;
+}
+
+.directions {
+  flex: 2.5;
+  min-width: 0;
+  border-left: 1px solid #F0687F;
+  padding-left: 40px;
+}
+
+h2 {
+  font-family: "bookmania", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: clamp(28px, 3vw, 50px);
+  color: #8C4C13;
+  line-height: 1.2;
+  margin: 0 0 20px 0;
+}
+
+
+
+
+ul {
+  font-family: "futura-pt", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  color: #8C4C13;
+  margin: 0;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 3px;
+}
+
+li::marker {
+  color: #F0687F;
+}
+
+
+
+
+p {
+  font-family: "futura-pt", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  color: #8C4C13;
+  margin: 0 0 25px 0;
+}
+
+.directions p {
+  position: relative;
+  padding-left: 100px;
+  min-height: 30px;
+}
+
+.directions strong {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 80px;
+  background-color: #F0687F;
+  color: #FFFBF5;
+  font-family: "futura-pt", sans-serif;
+  font-weight: 600;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 3px 10px;
+  border-radius: 30px;
+  white-space: nowrap;
+}
+
+
+
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 8% 0 8%;
+  padding: 25px 0 40px 0;
+  border-top: 1px solid #F0687F;
+  gap: 25px;
+}
+
+.left, .right {
+  display: flex;
+  align-items: center;
+}
+
+.left a, .right a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+}
+
+.right a {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.arrow, .arrow-right {
+  width: 2em;
+  flex-shrink: 0;
+  margin: 0;
+  display: block;
+}
+
+.arrow-right {
+  transform: rotate(180deg);
+}
+
+h3 {
+  margin: 0;
+  font-family: "bookmania", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.2em;
+  color: #8C4C13;
+}
+
+footer a:hover h3 {
+  color: #F36B2B;
+}
+
+
+
+
+@media (max-width: 1200px) {
+
+  .header {
+    padding: 40px 5%;
+    gap: 25px;
+  }
+
+  .recipe {
+    margin: 70px 5% 40px 5%;
+    gap: 25px;
+  }
+
+  .ingredients {
+    padding: 25px;
+  }
+
+  .directions {
+    padding-left: 25px;
+  }
+
+  .title {
+    letter-spacing: 1px;
+  }
+
+  .prep, .cook, .total, .serve {
+    padding: 0 8px;
+  }
+
+  ul, p {
+    font-size: 1.2em;
+  }
+
+  footer {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+}
+
+
+
+
+@media (max-width: 850px) {
+
+  .header {
+    padding: 40px 5%;
+  }
+
+  h1 {
+    font-size: clamp(35px, 6.5vw, 60px);
+  }
+
+  .header img {
+    width: 40%;
+    transform: translateY(30px);
+  }
+
+  .description {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .cook {
+    border-right: none;
+  }
+
+  .title {
+    font-size: 1em;
+  }
+
+  .time {
+    font-size: 1.3em;
+  }
+
+  .recipe {
+    margin-top: 50px;
+    gap: 20px;
+  }
+
+  .ingredients {
+    padding: 20px;
+  }
+
+  .directions {
+    flex: 1.8;
+    padding-left: 20px;
+  }
+
+  .directions p {
+    padding-left: 0;
+  }
+
+  .directions strong {
+    position: static;
+    display: inline-block;
+    margin-right: 8px;
+  }
+
+  ul, p {
+    font-size: 1.1em;
+  }
+
+}
+
+
+
+
+@media (max-width: 600px) {
+
+  .navbar {
+    padding: 15px 20px;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    font-size: 2em;
+  }
+
+  nav {
+    gap: 12px;
+  }
+
+  nav a {
+    font-size: 0.85em;
+  }
+
+  .header {
+    flex-direction: column;
+    padding: 30px 25px;
+    gap: 20px;
+  }
+
+  .header-text {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: clamp(35px, 9vw, 60px);
+    text-align: center;
+  }
+
+  .header img {
+    width: 80%;
+    max-width: 350px;
+    transform: translateY(45px);
+  }
+
+  .description {
+    gap: 20px;
+  }
+
+  .recipe {
+    flex-direction: column;
+    margin: 60px 25px 30px 25px;
+    gap: 30px;
+  }
+
+  .ingredients {
+    width: 100%;
+    padding: 25px;
+  }
+
+  .directions {
+    width: 100%;
+    border-left: none;
+    padding-left: 0;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  ul, p {
+    font-size: 1.1em;
+  }
+
+  footer {
+    margin: 30px 25px 0 25px;
+    gap: 20px;
+  }
+
+  h3 {
+    font-size: 0.85em;
+  }
+
+  .arrow, .arrow-right {
+    width: 1.5em;
+  }
+
+}
